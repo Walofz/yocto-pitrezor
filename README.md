@@ -11,7 +11,7 @@ Note: This process will download and build a large amount of software, so be sur
 This process requires that you configure your environment to be able to use Bitbake. This allows you to make modifications to the recipe locally, as well as allowing you to modify/rebuild images without the full redownload/compile.
 
 The steps are:
-1. Install requirements on your system. (On Ubuntu 22.04 you will need to install these with something like: `sudo apt install gawk wget git diffstat unzip texinfo gcc build-essential chrpath socat cpio python3 python3-pip python3-pexpect xz-utils debianutils iputils-ping python3-git python3-jinja2 libegl1-mesa libsdl1.2-dev python3-subunit mesa-common-dev zstd liblz4-tool file locales && sudo locale-gen en_US.UTF-8`)
+1. Install requirements on your system. (On Ubuntu 22.04 you will need to install these with something like: `sudo apt install gawk wget git diffstat unzip texinfo gcc build-essential chrpath socat cpio python3 python3-pip python3-pexpect xz-utils debianutils iputils-ping python3-git python3-jinja2 libegl1-mesa libsdl1.2-dev python3-subunit mesa-common-dev zstd liblz4-tool file locales zip && sudo locale-gen en_US.UTF-8`)
 2. Clone the repository: `git clone https://github.com/Walofz/yocto-pitrezor`
 3. Nativate to the repository source folder: `cd yocto-pitrezor`
 4. `./build-pitrezor-nodocker.sh`
