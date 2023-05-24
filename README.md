@@ -22,7 +22,7 @@ The piTrezor configuration file can be found in the `/boot` partition of the SD 
 An example of the configuration file can be seen below.
 
     # Scale factor of display when using hdmi or an FBCP-ILI9341 LCD HAT (1 to 16 inclusively)
-    export TREZOR_OLED_SCALE=4
+    export TREZOR_OLED_SCALE=5
     
     # Type of oled to use
     #  NO OLED                  = 0
