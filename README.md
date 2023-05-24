@@ -1,7 +1,7 @@
 # yocto-pitrezor
 OS linux platform for the pitrezor project (usign yocto)
 
-This code is used to build the linux platform image for the raspberry pi zero and pi 4 to be able to run the pitrezor software at bootup.
+This code is used to build the linux platform image for the raspberry pi zero to be able to run the pitrezor software at bootup.
 
 Note: This process will download and build a large amount of software, so be sure to allow at least 50GB of space on the host system and expect the process to take several hours.
 
@@ -14,10 +14,7 @@ The steps are:
 1. Install requirements on your system. (On Ubuntu 22.04 you will need to install these with something like: `sudo apt install gawk wget git diffstat unzip texinfo gcc build-essential chrpath socat cpio python3 python3-pip python3-pexpect xz-utils debianutils iputils-ping python3-git python3-jinja2 libegl1-mesa libsdl1.2-dev python3-subunit mesa-common-dev zstd liblz4-tool file locales && sudo locale-gen en_US.UTF-8`)
 2. Clone the repository: `git clone https://github.com/Walofz/yocto-pitrezor`
 3. Nativate to the repository source folder: `cd yocto-pitrezor`
-4. `./build-pitrezor-nodocker.sh 
-
-## Hardware & Build Note
-The fbcp-ili9341 driver is not currently compatible with building or running natively in a 64bit environment. What this means is that if you intend to use a piTrezor in this way, you need to ensure that you are building x86 software for your system. (Typically this means simply leaving "-64" off the end of the platform name, so for a Raspberry Pi 4, your target platform would be `raspberrypi4`) _There is no real security or performance penalty from running piTrezor in x86 mode as opposed to x64..._
+4. `./build-pitrezor-nodocker.sh`
 
 ## Configuration File Note
 The piTrezor configuration file can be found in the `/boot` partition of the SD card after flashing it. (This will be the only partition visible if you are using something like a Windows PC)
