@@ -8,7 +8,7 @@ source /var/volatile/pitrezor.config
 if [ "$BITCOIN_ONLY" -eq 0 ] 
 then
   echo "Starting piTrezor-Universal"
-  TREZOR_OLED_FULLSCREEN=1 /usr/bin/pitrezor-universal
+  TREZOR_OLED_FULLSCREEN=0 /usr/bin/pitrezor-universal
 else
   echo "Starting piTrezor-BitcoinOnly"
   TREZOR_OLED_FULLSCREEN=1 /usr/bin/pitrezor-bitcoinonly

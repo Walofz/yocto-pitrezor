@@ -10,7 +10,7 @@ SRC_URI = "git://github.com/juj/fbcp-ili9341.git;branch=master \
            file://start_mirrorhdmi \
           "
 
-SRCREV = "d0ebacf7c1f30b19b50997ebb67ba4f70ab95368"
+SRCREV = "98e7a58ca2ea4fa316a15c3190560287a38a3eed"
 
 S = "${WORKDIR}/git"
 
