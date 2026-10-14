@@ -8,7 +8,7 @@ IMGFILE=imgs/pitrezor-$MACHINE-$TAG.img
 DOCKER_UID=30000
 
 mkdir -p imgs
-chown $DOCKER_UID:$DOCKER_UID imgs
+chown $USER:$USER imgs
 
 docker build -t $IMAGE .
 
