@@ -8,7 +8,7 @@ RDEPENDS:${PN} = "rng-tools dos2unix libegl-mesa libgles2-mesa mesa-megadriver l
 
 inherit pkgconfig python3native siteinfo
 
-SRC_URI = "git://github.com/heneault/trezor-firmware.git;protocol=https;branch=pitrezor" \
+SRC_URI = "git://github.com/heneault/trezor-firmware.git;protocol=https;branch=pitrezor \
            file://start_pitrezor \
            file://pitrezor.config \
            "
